@@ -1,24 +1,46 @@
-# README
+# Time Logger
+An app for tracking time for multiple activities.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+It saves your activities and make a log of time you've spent on each.
 
-* Ruby version
+Built With:
+- Javascript
+- React
+- React-redux
+- React-router
+- lodash
+- npm
+- Ruby on Rails
+- CSS 
+- Html
 
-* System dependencies
+Getting Started
 
-* Configuration
+Open the [Live Demo Link](https://clock-cms.herokuapp.com/signin) and enjoy.
 
-* Database creation
+### Author
 
-* Database initialization
+Sergio Diaz
 
-* How to run the test suite
+Github: @[github](https://github.com/serdg0)
 
-* Services (job queues, cache servers, search engines, etc.)
+Twitter: @[twitter](https://twitter.com/thesergiod)
 
-* Deployment instructions
+Linkedin: soon
 
-* ...
+### Contributing
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the issues page.
+
+### Show your support
+Give a star if you like this project!
+
+### Acknowledgments
+
+[Gregoire Vella on Behance](https://www.behance.net/gallery/13271423/Bodytrackit-An-iOs-app-Branding-UX-and-UI) inspired the design.
+
+### License
+
+This project is MIT licensed.
