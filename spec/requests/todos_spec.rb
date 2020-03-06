@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Todos API', type: :request do
-  # initialize test data 
+  # initialize test data
   let(:user) { create(:user) }
   let!(:todos) { create_list(:todo, 10, created_by: user.id) }
   let(:todo_id) { todos.first.id }
@@ -26,7 +26,6 @@ RSpec.describe 'Todos API', type: :request do
   # Test suite for GET /todos/:id
   describe 'GET /todos/:id' do
     before { get "/todos/#{todo_id}", params: {}, headers: headers }
-
 
     context 'when the record exists' do
       it 'returns the todo' do
@@ -62,7 +61,6 @@ RSpec.describe 'Todos API', type: :request do
     context 'when the request is valid' do
       before { post '/todos', params: valid_attributes, headers: headers }
 
-
       it 'creates a todo' do
         expect(json['title']).to eq('Learn Elm')
       end
@@ -91,7 +89,6 @@ RSpec.describe 'Todos API', type: :request do
   describe 'PUT /todos/:id' do
     let(:valid_attributes) { { title: 'Shopping' }.to_json }
 
-
     context 'when the record exists' do
       before { put "/todos/#{todo_id}", params: valid_attributes, headers: headers }
 
@@ -108,7 +105,6 @@ RSpec.describe 'Todos API', type: :request do
   # Test suite for DELETE /todos/:id
   describe 'DELETE /todos/:id' do
     before { delete "/todos/#{todo_id}", params: {}, headers: headers }
-
 
     it 'returns status code 204' do
       expect(response).to have_http_status(204)

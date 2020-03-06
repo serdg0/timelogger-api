@@ -1,13 +1,13 @@
 class ApplicationController < ActionController::API
-    include Response
-    include ExceptionHandler
+  include Response
+  include ExceptionHandler
 
-    before_action :authorize_request
-    attr_reader :current_user
+  before_action :authorize_request
+  attr_reader :current_user
 
-    private
+  private
 
-    def authorize_request
-        @current_user = (AuthorizeApiRequest.new(request.headers).call)[:user]
-    end
+  def authorize_request
+    @current_user = (AuthorizeApiRequest.new(request.headers).call)[:user] # rubocop:disable Style/RedundantParentheses
+  end
 end
