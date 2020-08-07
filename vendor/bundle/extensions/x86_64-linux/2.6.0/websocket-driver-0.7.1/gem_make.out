@@ -1,0 +1,15 @@
+current directory: /home/sergiodiaz/projects/timelogger/timelogger-api/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+/home/sergiodiaz/.rbenv/versions/2.6.3/bin/ruby -I /home/sergiodiaz/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200807-22328-wr92v2.rb extconf.rb
+creating Makefile
+
+current directory: /home/sergiodiaz/projects/timelogger/timelogger-api/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/sergiodiaz/projects/timelogger/timelogger-api/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/sergiodiaz/projects/timelogger/timelogger-api/vendor/bundle/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20200807-22328-1q2raar

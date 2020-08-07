@@ -1,0 +1,19 @@
+current directory: /home/sergiodiaz/projects/timelogger/timelogger-api/vendor/bundle/gems/bcrypt-3.1.13/ext/mri
+/home/sergiodiaz/.rbenv/versions/2.6.3/bin/ruby -I /home/sergiodiaz/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200807-22328-10ibbwb.rb extconf.rb
+creating Makefile
+
+current directory: /home/sergiodiaz/projects/timelogger/timelogger-api/vendor/bundle/gems/bcrypt-3.1.13/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/sergiodiaz/projects/timelogger/timelogger-api/vendor/bundle/gems/bcrypt-3.1.13/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+gcc  -D__SKIP_GNU -I/home/sergiodiaz/.rbenv/versions/2.6.3/include     -c -o x86.o x86.S
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/sergiodiaz/projects/timelogger/timelogger-api/vendor/bundle/gems/bcrypt-3.1.13/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20200807-22328-pokxt5
