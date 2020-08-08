@@ -23,7 +23,7 @@ module ClockApi
     config.load_defaults 5.2
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3000', 'https://timelogger.netlify.app'
+        origins 'https://timelogger.netlify.app'
         resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options],
         credentials: true
       end
