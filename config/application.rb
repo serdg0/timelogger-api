@@ -21,13 +21,6 @@ module ClockApi
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
-    config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
-      allow do
-        origins 'https://timelogger.netlify.app'
-        resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options],
-        credentials: true
-      end
-    end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
