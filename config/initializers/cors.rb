@@ -1,6 +1,12 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors, debug: true, logger: (-> { Rails.logger }) do
   allow do
-    origins 'https://timelogger.netlify.app/'
+    origins 'https://timelogger.netlify.app'
+
+    resource '/signin',
+      :headers => :any,
+      :methods => [:post],
+      :max_age => 0,
+      :credentials => true
 
     resource '*',
       :headers => :any,
